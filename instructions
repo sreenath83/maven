@@ -1,0 +1,25 @@
+Maven first project
+
+Add task
+name
+freestyle > ok
+Git > URL
+Branch main
+build enviorment : delete workspace before build starts
+
+build steps: invoke top level maven targets
+maven version: maven_local
+goal: clean package
+
+post build action
+target/*.war
+context path: maven (git projectname)
+
+credentials: tomcat/password (add)
+
+tomcat url : ip:8082
+
+apply save
+
+
+build now
